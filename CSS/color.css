@@ -1,0 +1,115 @@
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=12O0u0ktRtIAP8GOAjTneEZ9UyV */
+
+/* Feel free to copy&paste color codes to your application */
+
+.color-high {
+    color: #c0ff17;
+}
+
+.color-white {
+    color: #ffffff;
+}
+/* As hex codes */
+
+.color-0 { color: #16C00D }	/* Main Primary color */
+.color-1 { color: #033800 }
+.color-2 { color: #068000 }
+.color-3 { color: #45DE3D }
+.color-4 { color: #95D392 }
+
+
+
+/* As RGBa codes */
+
+.rgba-0 { color: rgba( 22,192, 13,.2) }	/* Main Primary color */
+.rgba-1 { color: rgba(  3, 56,  0,.36) }
+.rgba-2 { color: rgba(  6,128,  0,.5) }
+.rgba-3 { color: rgba( 69,222, 61,.8) }
+.rgba-4 { color: rgba(149,211,146,.8) }
+
+
+
+.color-violet-0 { color: #AB24AF }	/* Main Primary color */
+.color-violet-1 { color: #D299D4 }
+.color-violet-2 { color: #B54EB9 }
+.color-violet-3 { color: #A101A6 }
+.color-violet-4 { color: #7F0083 }
+
+
+
+/* As RGBa codes */
+
+.rgba-violet-0 { color: rgba(171, 36,175,.5) }	/* Main Primary color */
+.rgba-violet-1 { color: rgba(210,153,212,.45) }
+.rgba-violet-2 { color: rgba(181, 78,185,.25) }
+.rgba-violet-3 { color: rgba(161,  1,166,.6) }
+.rgba-violet-4 { color: rgba(127,  0,131,.68) }
+
+
+
+/*------------ this pallet is used for emphasize --------------*/
+.color-pink-0 { color: #CB0073 }	/* Main Primary color */
+.color-pink-1 { color: #560031 }
+.color-pink-2 { color: #910052 }
+.color-pink-3 { color: #D53890 }
+.color-pink-4 { color: #D56FA8 }
+
+
+
+/* As RGBa codes */
+
+.rgba-pink-0 { color: rgba(203,  0,115,.5) }	/* Main Primary color */
+.rgba-pink-1 { color: rgba(203,  0,115,.8) }    /* Main Primary color */
+.rgba-pink-2 { color: rgba(203,  0,115,.1) }    /* Main Primary color */
+.rgba-pink-3 { color: rgba(203,  0,115,.35) }   /* Main Primary color */
+
+/*.rgba-pink-1 { color: rgba( 86,  0, 49,.5) }*/
+/*.rgba-pink-2 { color: rgba(145,  0, 82,.3) }*/
+/*.rgba-pink-3 { color: rgba(213, 56,144,.6) }*/
+/*.rgba-pink-4 { color: rgba(213,111,168,.65) }*/
+
+
+
+/*-----------  background colors ------------*/
+.bg-color-0 {
+     background-color: #16C00D;
+ }
+
+.bg-color-1 {
+    background-color: #AB24AF;
+}
+
+.bg-color-6 {
+    background-color: #D299D4;
+}
+
+
+.bg-color-2 {
+    background-color: #CB0073;
+}
+
+
+/* -------- transparent background --------- */
+.bg-color-3 {
+    background-color: rgba( 22,192, 13,.5);
+}
+
+.bg-color-4 {
+    background-color: rgba(171, 36,175,.5);
+}
+
+.bg-color-5 {
+    background-color: rgba(145,  0, 82,.5);
+}
+/* -------- gradient background --------- */
+.bg-grad1 {
+    background-image: -webkit-gradient(linear,left top, right top,from(#D299D4), color-stop(rgba(245,245,255,.7)), to(#D299D4));
+    background-image: linear-gradient(90deg,#D299D4, rgba(245,245,255,.7), #D299D4);
+}
+
+.bg-grad2 {
+    background-image: -webkit-gradient(linear,left top, right top,from(#910052), color-stop(rgba(171, 36,175,.6)), to(#910052));
+    background-image: linear-gradient(90deg,#910052, rgba(171, 36,175,.6), #910052);
+}

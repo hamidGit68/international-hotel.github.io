@@ -1,0 +1,284 @@
+@media screen and (max-width: 1089px) {
+    /* footer part */
+    .social-icons {
+        margin-top: 1.5rem;
+    }
+    /* ------------- */
+}
+
+@media screen and (max-width: 992px) and (min-width: 685px) {
+
+    /* vodeo part */
+    .video-container {
+    margin: 5px auto;
+    height: 72vw;
+    }
+    /* ------------- */
+
+    /* card part */
+    .card-text {
+    max-height: 180px;
+    }
+    /* ------------- */
+
+    /* reservation part */
+    .dropdown .title{
+        font-size: 1rem;
+    }
+    /* ------------- */
+
+    /* footer part */
+    .social-icons i {
+    font-size: 1.3rem;
+    padding: .1rem;
+    }
+
+    .maxP {
+        font-size: .9rem;
+    }
+    /* ------------- */
+}
+
+@media screen and (max-width: 685px) and (min-width: 485px) {
+    /* root part */
+
+    :root {
+    font-size: 15px;
+    }
+
+    /* ------------- */
+
+    /* header part */
+    #parent-nav {
+    height: 158px;
+    }
+
+
+    /* ------------- */
+
+    /* carousel part */
+
+    .carousel-inner .carousel-caption {
+        position: absolute;
+        bottom: -25%;
+        padding-bottom: 2%;
+
+    }
+
+    .carousel-inner .carousel-caption h2 {
+        font-size: 1.5rem;
+    }
+
+    /* ------------- */
+
+    /* video part */
+    .btn-control i {
+        padding: 5px;
+        border: 1px solid rgba(161,  1,166,.8);
+        font-size: 1.4em;
+    }
+
+    .video-container {
+    margin: 5px auto;
+    height: 68vw;
+    }
+
+    /* ------------- */
+
+    /* sponsor part */
+    .brandText > div {
+      font-size: 1.2rem;
+    }
+    /* ------------- */
+
+    /* booking part */
+    .bg-property {
+        min-height: 310px;
+    }
+    /* ------------- */
+
+
+    /* footer part */
+    .bg-footer {
+        min-height: 456px;
+    }
+
+    .maxP {
+        font-size: 1rem;
+        line-height: 23px;
+        max-height: 155px;
+    }
+    /* ------------- */
+
+}
+
+@media screen and (max-width: 685px)  {
+    .parentSlide {
+      min-height: 500px;
+    }
+
+    .one-slide {
+        min-height: 500px;
+    }
+
+    /* booking part */
+    .bg-click {
+        background-image: linear-gradient(90deg, rgba(3,56,0,.52) 10%, rgba(171, 36,175,.7), rgba(3,56,0,.52) 90%) ,url("../image/hotel-img/Reception-bg.png");
+    }
+    /* ------------- */
+
+    /* booking part and blank page */
+    .parMessage p {
+        font-size: 1.5rem;
+    }
+    /* ------------- */
+}
+
+@media screen and (max-width: 575px) {
+    /* footer part */
+    .bg-footer {
+        background-image: none;
+        background-color: rgba(171, 36,175,.5);
+    }
+
+    .usfule .list-group .list-group-item:hover {
+        border-bottom: 1px solid #CB0073;
+    }
+    /* ------------- */
+}
+
+
+@media screen and (min-width: 485px) {
+
+    /* header part */
+    #mymenu li {
+        border-right: .02rem solid #B54EB9;
+    }
+
+    #mymenu li:last-child {
+        border: none;
+    }
+
+
+    /* ------------- */
+
+
+}
+
+@media screen and (max-width: 485px) {
+
+    /* root part */
+
+    :root {
+    font-size: 13px;
+    }
+
+    /* ------------- */
+
+
+    /* header part */
+
+    .navbar {
+        position: relative;
+    }
+
+    .iconClass {
+        position: absolute;
+        right: 2%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+
+    /* ------------- */
+
+    /* carousel part */
+
+    .carousel-inner .carousel-caption {
+        position: absolute;
+        bottom: -55%;
+        padding-bottom: 1%;
+
+    }
+
+    .carousel-inner .carousel-caption h2 {
+        font-size: 1.3rem;
+    }
+
+    /* ------------- */
+
+    /* divider part */
+    .divid-part {
+        margin: 20px auto;
+    }
+
+    /* ------------- */
+
+    /* video part */
+
+    .range-film {
+    height: 5px;
+    }
+
+    .range-progress {
+    height: 5px;
+    }
+
+    .video-container {
+    margin: 3px auto;
+    height: 74vw;
+    }
+
+    .btn-control i {
+        padding: 5px;
+        border: 1px solid rgba(161,  1,166,.8);
+        font-size: 1.9em;
+    }
+
+
+    /* ------------- */
+
+
+    /* card part */
+    .card-text {
+    max-height: 168px;
+    }
+
+    .card img {
+    height: 250px;
+    }
+    /* ------------- */
+
+
+    /* reservation part */
+    #result div, #result p {
+        font-size: 1.5rem;
+      }
+    /* ------------- */
+
+    /* sponsor part */
+    .brandText > div {
+      font-size: 1.3rem;
+    }
+
+    .one-slide {
+        min-height: 550px;
+    }
+
+    .parentSlide {
+        min-height: 550px;
+    }
+    /* ------------- */
+
+    /* booking part */
+    .bg-property {
+        min-height: 270px;
+    }
+
+    /*.content-form {
+        font-size: .7rem;
+    }*/
+    /* ------------- */
+
+}

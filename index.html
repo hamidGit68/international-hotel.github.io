@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>internatinal-hotel-home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- link for normalize -->
+    <link rel="stylesheet" href="CSS/normalized.css">
+
+    <!-- links for bootstrap -->
+    <!-- bootstrap 4 CSS Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="CSS/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" href="CSS/bootstrap-grid.min.css">-->
+
+    <!-- animate link -->
+    <link rel="stylesheet" href="CSS/animate.css">
+
+    <!-- link for icons -->
+    <link rel="stylesheet" href="image/icons/icofont.min.css">
+
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="CSS/color.css">
+    <link rel="stylesheet" href="CSS/animations.css">
+    <link rel="stylesheet" href="CSS/blank.css">
+    <link rel="stylesheet" href="CSS/loader.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+
+<body onLoad="loaderFunc()">
+<!--<h1>international hotel</h1>-->
+<!-- alert part -->
+
+<div id="loader" class="contain">
+	<div class="loader">
+		<div class="axe-kol farsh-asli"></div>
+		<div class="axe-kol l1"></div>
+		<div class="axe-kol l2"></div>
+		<div class="axe-kol l3"></div>
+		<div class="axe-kol l4"></div>
+		<div class="axe-kol l5"></div>
+		<div class="axe-kol l6"></div>
+		<div class="axe-kol l7"></div>
+		<div class="axe-kol l8"></div>
+		<div class="axe-kol l9"></div>
+		<div class="axe-kol l10"></div>
+		<div class="axe-kol ple-1"></div>
+	    <div class="text-head">Welcome !!!</div>
+	</div>
+</div>
+
+<!-- this div must contain all ellements of page because of the loader effect -->
+<div style="display:none;" id="page" class="animate-bottom">
+
+
+<div id="dialogoverlay"></div>
+<div id="dialogbox" class="animated bounceInDown delay-5s">
+    <div>
+        <div id="dialogboxhead"></div>
+        <div id="dialogboxbody"></div>
+        <div id="dialogboxfoot"></div>
+    </div>
+</div>
+
+<!-- /////////// -->
+
+<!-- start content (header part) -->
+<div class="container-fluid no-gutters">
+    <div class="col-sm-12">
+    <div class="row" id="logo-id">
+
+
+        <div id="logoId" class="col-sm-3 col-9">
+            <div class="logo-me">
+                <img class="img-fluid" src="image/logo/logo-asl-cut3.png" alt="Logo image">
+            </div>
+        </div>
+
+
+        <nav id="navToggle" class="navbar d-block d-sm-none col-3">
+
+               <button class="navbar-toggler btn-tog" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" onclick="toggFun()">
+                <i id="icon1" class="iconClass icofont-navigation-menu icofont-3x"></i>
+                <i id="icon2" class="iconClass icofont-close-line icofont-3x d-none"></i>
+               </button>
+
+               <div class="collapse" id="navbarToggler">
+<!--                    <a class="navbar-brand" href="#">Hidden brand</a>-->
+                <ul class="pos-paeen mr-auto">
+                    <li class="nav-item active bg-color-6">
+                    <a class="nav-link color-violet-4" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item bg-color-6">
+                    <a class="nav-link color-violet-4" href="#">greeting</a>
+                    </li>
+
+                    <li class="nav-item bg-color-6">
+                    <a class="nav-link color-violet-4" href="#">about us</a>
+                    </li>
+
+                    <li class="nav-item bg-color-6">
+                    <a class="nav-link color-violet-4" href="#">services</a>
+                    </li>
+
+                    <li class="nav-item bg-color-6">
+                    <a class="nav-link color-violet-4" href="#">rooms</a>
+                    </li>
+                </ul>
+               </div>
+
+
+        </nav>
+
+        <div id="navbarToggler" class="collapse matn-header color-violet-4">
+            The difference between a successful Hotel and others is a lack in <span class="color-pink-0">experience</span>.
+        </div>
+
+
+
+        <div class="col-sm-9 d-sm-block d-none bg-text">
+
+        </div>
+    </div>
+        <div id="parent-nav" class="row d-sm-flex d-none">
+
+            <div class="animate-echo d-sm-flex d-none col-sm-2 bg-color-6">
+            <div class="bg-color-1 posshare posheight1"></div>
+            <div class="bg-color-1 posshare posheight2"></div>
+            <div class="bg-color-1 posshare posheight3"></div>
+            <div class="bg-color-1 posshare posheight4"></div>
+            <div class="bg-color-1 posshare posheight5"></div>
+            <div class="bg-color-1 posshare posheight6"></div>
+            <div class="bg-color-1 posshare posheight7"></div>
+            <div class="bg-color-1 posshare posheight8"></div>
+            <div class="bg-color-1 posshare posheight9"></div>
+            <div class="bg-color-1 posshare posheight10"></div>
+            <div class="harekat"></div>
+            </div>
+
+
+            <nav class="nav-me d-sm-flex d-none justify-content-center border-show col-md-8 col-sm-10">
+                <ul id="mymenu" class="d-flex w-100 justify-content-center align-items-center">
+                    <li class="mr-lg-2 col-sm bg-color-6"><a class="color-violet-4" href="#">home</a></li>
+                    <li class="mr-lg-2 col-sm bg-color-6"><a class="color-violet-4" href="#">greeting</a></li>
+                    <li class="mr-lg-2 col-sm bg-color-6"><a class="color-violet-4" href="#">about us</a></li>
+                    <li class="mr-lg-2 col-sm bg-color-6"><a class="color-violet-4" href="#">services</a></li>
+                    <li class="col-sm bg-color-6"><a class="color-violet-4" href="#">rooms</a></li>
+                </ul>
+            </nav>
+
+            <div class="animate-echo2 d-md-flex col-sm-2 bg-color-6 d-none ">
+                <div class="bg-color-1 posshare posheight-1"></div>
+                <div class="bg-color-1 posshare posheight-2"></div>
+                <div class="bg-color-1 posshare posheight-3"></div>
+                <div class="bg-color-1 posshare posheight-4"></div>
+                <div class="bg-color-1 posshare posheight-5"></div>
+                <div class="bg-color-1 posshare posheight-6"></div>
+                <div class="bg-color-1 posshare posheight-7"></div>
+                <div class="bg-color-1 posshare posheight-8"></div>
+                <div class="bg-color-1 posshare posheight-9"></div>
+                <div class="bg-color-1 posshare posheight-10"></div>
+                <div class="harekat2"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+   <div class="col-sm-12">
+        <div class="row mt-4">
+
+
+
+            <div id="my-carousel" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="animated zoomInUp d-block w-100" src="image/hotel-img/manzare.jpg" alt="image of a sea">
+
+                        <div class="carousel-caption">
+                            <h2 class="animated fadeInUp delay-class bg-color-1">enjoy your holiday here</h2>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="animated zoomIn d-block w-100" src="image/hotel-img/view.jpg" alt="image of view from hotel">
+                        <div class="carousel-caption">
+                            <h2 class="animated fadeInUp delay-class bg-color-1">great view in windows</h2>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="animated jello d-block w-100" src="image/hotel-img/hotel-room.jpg" alt="image of room from hotel">
+                        <div class="carousel-caption">
+                            <h2 class="animated fadeInUp delay-class bg-color-1" >feeling relax at rooms</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- end of start content -->
+
+
+<div class="mt-4 container-fluid wow animated bounceInRight">
+    <div class="row justify-content-center">
+        <div class="col-sm-9">
+        <div class="divid-part"><span></span>
+        <span>
+        Welcome to our hotel
+        <i class="class-border icofont-5-star-hotel"></i>
+        </span>
+        <span></span></div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+<div class="video-container">
+
+
+    <video>
+        <source src="videos/intro-final.mp4" type="video/mp4">
+    </video>
+
+    <div class="controls bg-color-6">
+        <div class="range-film">
+            <div class="range-progress">
+            </div>
+        </div>
+        <div class="btn-control">
+            <button id="play-pause" onclick="playVideo()">
+                <i id="icon-play" class="icofont-ui-play icofont-2x rgba-violet-0"></i>
+            </button>
+        </div>
+    </div>
+
+</div>
+    </div>
+</div>
+
+<!-- divider for find us -->
+<div class="mt-4 container-fluid wow animated fadeInLeftBig">
+    <div class="row justify-content-center">
+        <div class="col-sm-9">
+        <div class="divid-part"><span></span>
+        <span>
+        Where you can find us
+        <i class="class-border icofont-direction-sign"></i>
+        </span>
+        <span></span></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="col-sm-12">
+    <div class="row">
+
+<!--<div class="card-group">-->
+   <div class="col-md-6">
+    <div class="parent-me card h-100">
+        <img src="image/hotel-img/brazil-hotel.jpg" class="card-img-top  w-100 d-block" alt="image of hotel in brazil">
+        <div class="card-body bg-dota text-light">
+            <h2 class="card-title text-center">Brazil</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae necessitatibus sequi unde! Commodi doloremque error necessitatibus nihil non quis reprehenderit unde velit veritatis. At, cupiditate deleniti ea esse, ex iste libero neque placeat possimus quam sapiente, sed totam. A ab aperiam architecto autem consequuntur corporis cum ex ipsum iste laborum nam necessitatibus non placeat provident quidem quo soluta sunt, suscipit totam voluptatibus? <span class="d-inline">Accusamus, architecto, corporis cumque dolores ducimus earum explicabo, molestiae omnis placeat reiciendis veritatis!</span></p>
+            <a href="#" class="card-link d-none color-high">read more ...</a>
+            <div class="card-footer">
+                <p class="contact-card">
+                    <span class="color-high">want to book?</span>
+                    <i class="icofont-ui-cell-phone"></i>
+                    <small>0876487222</small>
+                    <i class="icofont-ui-call"></i>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="col-md-6">
+    <div class="parent-me card h-100">
+    <img src="image/hotel-img/spain-hotel.jpeg" class="card-img-top w-100 d-block" alt="image of hotel in spain">
+        <div class="card-body bg-dota spain-flag text-light">
+            <h2 class="card-title text-center">Spain</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae necessitatibus sequi unde! Commodi doloremque error necessitatibus nihil non quis reprehenderit unde velit veritatis. At, cupiditate deleniti ea esse, ex iste libero neque placeat possimus quam sapiente, sed totam. A ab aperiam architecto autem consequuntur corporis cum ex ipsum iste laborum nam necessitatibus non placeat provident quidem quo soluta sunt, suscipit totam voluptatibus? <span class="d-inline">Accusamus, architecto, corporis cumque dolores ducimus earum explicabo, molestiae omnis placeat reiciendis veritatis!</span></p>
+            <a href="#" class="card-link d-none color-high">read more ...</a>
+            <div class="card-footer">
+                <p class="contact-card">
+                    <span class="color-high">want to book?</span>
+                    <i class="icofont-ui-cell-phone"></i>
+                    <small>0478012028</small>
+                    <i class="icofont-ui-call"></i>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+<!--</div>-->
+
+    </div>
+
+
+<div class="row">
+<!--<div class="card-group">-->
+
+    <div class="col-md-6">
+    <div class="parent-me card h-100">
+        <img src="image/hotel-img/south-africa-hotel.jpg" class="card-img-top w-100 d-block" alt="image of hotel in south-africa">
+        <div class="card-body bg-dota south-africa-flag text-light">
+            <h2 class="card-title text-center">South africa</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae necessitatibus sequi unde! Commodi doloremque error necessitatibus nihil non quis reprehenderit unde velit veritatis. At, cupiditate deleniti ea esse, ex iste libero neque placeat possimus quam sapiente, sed totam. A ab aperiam architecto autem consequuntur corporis cum ex ipsum iste laborum nam necessitatibus non placeat provident quidem quo soluta sunt, suscipit totam voluptatibus? <span class="d-inline">Accusamus, architecto, corporis cumque dolores ducimus earum explicabo, molestiae omnis placeat reiciendis veritatis!</span></p>
+            <a href="#" class="card-link d-none color-high">read more ...</a>
+            <div class="card-footer">
+                <p class="contact-card">
+                    <span class="color-high">want to book?</span>
+                    <i class="icofont-ui-cell-phone"></i>
+                    <small>0774185795</small>
+                    <i class="icofont-ui-call"></i>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    <div class="col-md-6">
+    <div class="parent-me card h-100">
+    <img src="image/hotel-img/japan-hotel.jpeg" class="card-img-top w-100 d-block" alt="image of hotel in japan">
+        <div class="card-body bg-dota japan-flag text-light">
+            <h2 class="card-title text-center">Japan</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae necessitatibus sequi unde! Commodi doloremque error necessitatibus nihil non quis reprehenderit unde velit veritatis. At, cupiditate deleniti ea esse, ex iste libero neque placeat possimus quam sapiente, sed totam. A ab aperiam architecto autem consequuntur corporis cum ex ipsum iste laborum nam necessitatibus non placeat provident quidem quo soluta sunt, suscipit totam voluptatibus? <span class="d-inline">Accusamus, architecto, corporis cumque dolores ducimus earum explicabo, molestiae omnis placeat reiciendis veritatis!</span></p>
+            <a href="#" class="card-link d-none color-high">read more ...</a>
+            <div class="card-footer">
+                <p class="contact-card">
+                    <span class="color-high">want to book?</span>
+                    <i class="icofont-ui-cell-phone"></i>
+                    <small>0047222572</small>
+                    <i class="icofont-ui-call"></i>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+<!--</div>-->
+
+</div>
+
+</div>
+</div>
+
+<!-- reservation part -->
+<div class="container-fluid bg-built">
+    <div class="col-sm-12">
+    <div class="row">
+        <div id="drop-parent" class="col-sm-4">
+
+            <div class='dropdown mt-sm-0 mt-5 col-lg-10 offset-lg-1 col-12'>
+                <div class='title pointerCursor'>CHECK-IN DATE<i class="icofont-stylish-right"></i></div>
+
+                <div class='menu pointerCursor hide'>
+                    <div class='option' id='option1'>option1
+
+                    </div>
+                    <div class='option' id='option2'>Option 2</div>
+                    <div class='option' id='option3'>Option 3</div>
+                    <div class='option' id='option4'>Option 4</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="result-parent" class="col-sm-8">
+            <div class="my-5" id='result'>
+                <h1>We are <span class="decor1" style="font-size: 1.8rem;">delighted</span> that you have selected our hotel.</h1>
+
+                <p>On behalf of the entire team at the <span class="decor1">International Hotel</span>, we extend you a very <span class="decor1">warm welcome</span> and trust your stay with us will be both enjoyable and comfortable.
+                </p>
+
+                <p>The hotel offers a selection of future dates availability of rooms which are detailed in the <a id="decor2" href="#">rooms section</a> of our website
+                </p>
+                <div>please choose your <span class="decor1">CHECK-IN DATE</span> from <em id="chWord">left</em> panel</div>
+            </div>
+
+            <div id="option1_text" class="display-none">
+                <div class="col-sm-10 offset-sm-1 bg-grad1 my-5">
+                   <div class="row">
+                    <p id="textExplain">
+                        there are <span class="decor1">10</span> suite available for that time. <span class="decor1">4</span> of them are good for single travelers.<br> you could book them with 20% <span class="decor1">off</span>, if you want to stay more than <span class="decor1">3 days</span>.
+                    </p>
+                    </div>
+
+                    <div class="row">
+
+                      <div class="col-sm-9">
+                       <p id="textExplain">
+                        Should you require any assistance or have any specific questions?
+                       </p>
+                      </div>
+
+                      <div class="col-sm-2 mx-1 py-2">
+                       <button type="button" id="bottun-yes" class="btn btn-outline-secondary btn-lg bg-color-0 color-high">YES</button>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="option2_text" class="display-none">
+                <div class="col-sm-10 offset-sm-1 bg-grad1 my-5">
+                   <div class="row">
+                    <p id="textExplain">
+                        there are <span class="decor1">15</span> suite available for that time. <span class="decor1">8</span> of them are good for families.<br> you could book them with 14% <span class="decor1">off</span>, if your family members are more than <span class="decor1">5</span>.
+                    </p>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-9">
+                       <p id="textExplain">
+                        Should you require any assistance or have any specific questions?
+                       </p>
+                      </div>
+
+                      <div class="col-sm-2 mx-1 py-2">
+                       <button type="button" id="bottun-yes" class="btn btn-outline-secondary btn-lg bg-color-0 color-high">YES</button>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="option3_text" class="display-none">
+                <div class="col-sm-10 offset-sm-1 bg-grad1 my-5">
+                   <div class="row">
+                    <p id="textExplain">
+                        there are <span class="decor1">little</span> suite available for that time. <span class="decor1">only 2</span> of them are remained.<br> you should book them <span class="decor1">as soon as</span> possible, if you <span class="decor1">could not</span> book for another day.
+                    </p>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-9">
+                       <p id="textExplain">
+                        Should you require any assistance or have any specific questions?
+                       </p>
+                      </div>
+
+                      <div class="col-sm-2 mx-1 py-2">
+                       <button type="button" id="bottun-yes" class="btn btn-outline-secondary btn-lg bg-color-0 color-high">YES</button>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="option4_text" class="display-none">
+                <div class="col-sm-10 offset-sm-1 bg-grad1 my-5">
+                   <div class="row">
+                    <p id="textExplain">
+                        that's a <span class="decor1">holiday</span>. so the hotel have <span class="decor1">special</span> program for it.<br> you would <span class="decor1">enjoy</span> our fantastic <span class="decor1"> discounts</span> and our <span class="decor1">dramatic</span> restaurant, because of that holiday.
+                    </p>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-9">
+                       <p id="textExplain">
+                        Should you require any assistance or have any specific questions?
+                       </p>
+                      </div>
+
+                      <div class="col-sm-2 mx-1 py-2">
+                       <button type="button" id="bottun-yes" class="btn btn-outline-secondary btn-lg bg-color-0 color-high">YES</button>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+   <!-- end of reservation part -->
+
+    <!-- divider sponsor -->
+    <div class="mt-4 container-fluid wow animated bounceInLeft">
+    <div class="row justify-content-center">
+        <div class="col-sm-9">
+        <div class="divid-part"><span></span>
+        <span>
+        Our sponsors
+        <i class="class-border icofont-dollar"></i>
+        </span>
+        <span></span></div>
+        </div>
+    </div>
+    </div>
+
+    <!-- end of divider sponsor -->
+
+    <!-- sponsor part -->
+    <div class="container-fluid parentSlide bg-default">
+
+        <div class="col-sm-12">
+
+           <div class="row one-slide">
+
+               <div class="col-sm-4 align-items-center brandAxe d-flex justify-content-sm-end justify-content-center mb-3 mb-sm-0">
+                   <img class="img-fluid rounded srcImg" src="image/sponsors/sponsor0-banafsh.png" alt="brand of sponsor image">
+               </div>
+
+               <div class="col-sm-8 brandText d-flex flex-column  justify-content-center align-items-center">
+
+                   <div class="d-flex flex-column justify-content-between">
+                   <p class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">Crowne Plaza is a <span>multinational</span> chain of full service, upscale hotels headquartered in the <span>United Kingdom</span>. It is catering to business travelers and to the meetings and conventions market.</p>
+                   <p class="color-violet-0">see official website?</p>
+                   <div class="divider-2 div-transparent div-dot">
+                       <i class="icofont-web icofont-2x icon-divider"></i>
+                   </div>
+                   </div>
+
+
+                   <div class="mt-3">
+                   <svg class="bi bi-arrow-down" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                   <path fill-rule="evenodd" d="M4.646 9.646a.5.5 0 01.708 0L8 12.293l2.646-2.647a.5.5 0 01.708.708l-3 3a.5.5 0 01-.708 0l-3-3a.5.5 0 010-.708z" clip-rule="evenodd"/>
+                   <path fill-rule="evenodd" d="M8 2.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V3a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
+                   </svg>
+
+                   <a class="color-violet-2" href="https://www.booking.com/hotel/tr/crowne-plaza-istanbul-harbiye.html">click here</a>
+                   </div>
+
+                </div>
+
+           </div>
+
+           <div class="row one-slide">
+
+               <div class="col-sm-4 align-items-center brandAxe d-flex justify-content-sm-end justify-content-center mb-3 mb-sm-0">
+                   <img class="img-fluid rounded srcImg" src="image/sponsors/sponsor1-banafsh.png" alt="brand of sponsor image">
+               </div>
+
+               <div class="col-sm-8 brandText d-flex flex-column  justify-content-center align-items-center">
+
+                   <div class="d-flex flex-column justify-content-between">
+                   <p class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">Hilton Hotels & Resorts is a global brand of full-service hotels and resorts and the flagship brand of <span>American multinational hospitality</span> company Hilton. The original company was founded by <span>Conrad Hilton</span>.</p>
+                   <p class="color-violet-0">see official website?</p>
+                   <div class="divider-2 div-transparent div-dot">
+                       <i class="icofont-web icofont-2x icon-divider"></i>
+                   </div>
+                   </div>
+
+
+                   <div class="mt-3">
+                   <svg class="bi bi-arrow-down" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                   <path fill-rule="evenodd" d="M4.646 9.646a.5.5 0 01.708 0L8 12.293l2.646-2.647a.5.5 0 01.708.708l-3 3a.5.5 0 01-.708 0l-3-3a.5.5 0 010-.708z" clip-rule="evenodd"/>
+                   <path fill-rule="evenodd" d="M8 2.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V3a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
+                   </svg>
+
+                   <a class="color-violet-2" href="https://www.hilton.com/en/">click here</a>
+                   </div>
+                </div>
+
+           </div>
+
+           <div class="row one-slide">
+
+               <div class="col-sm-4 align-items-center brandAxe d-flex justify-content-sm-end justify-content-center mb-3 mb-sm-0">
+                   <img class="img-fluid rounded srcImg" src="image/sponsors/sponsor2-banafsh.png" alt="brand of sponsor image">
+               </div>
+
+               <div class="col-sm-8 brandText d-flex flex-column  justify-content-center align-items-center">
+
+                   <div class="d-flex flex-column justify-content-between">
+                   <p class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 ">Accor S.A. is a French multinational hospitality company that owns, manages and franchises hotels, resorts and vacation properties. It is the <span>single largest</span> hospitality company in Europe, and the sixth largest worldwide.</p>
+                   <p class="color-violet-0">see official website?</p>
+                   <div class="divider-2 div-transparent div-dot">
+                       <i class="icofont-web icofont-2x icon-divider"></i>
+                   </div>
+                   </div>
+
+
+                   <div class="mt-3">
+                   <svg class="bi bi-arrow-down" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                   <path fill-rule="evenodd" d="M4.646 9.646a.5.5 0 01.708 0L8 12.293l2.646-2.647a.5.5 0 01.708.708l-3 3a.5.5 0 01-.708 0l-3-3a.5.5 0 010-.708z" clip-rule="evenodd"/>
+                   <path fill-rule="evenodd" d="M8 2.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V3a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
+                   </svg>
+
+                   <a class="color-violet-2" href="https://group.accor.com/en">click here</a>
+                   </div>
+               </div>
+
+           </div>
+
+           <div class="row one-slide">
+
+               <div class="col-sm-4 brandAxe d-flex align-items-center justify-content-sm-end justify-content-center mb-3 mb-sm-0">
+                   <img class="img-fluid rounded srcImg" src="image/sponsors/sponsor3-banafsh.png" alt="brand of sponsor image">
+               </div>
+
+               <div class="col-sm-8 brandText d-flex flex-column justify-content-center align-items-center">
+                   <div class="d-flex flex-column justify-content-between">
+                   <p class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">Starwood Hotels was one of the largest companies that owned, operated, franchised and managed hotels, resorts... . It had 11 brands and owned, managed, or franchised <span>1,297 properties</span> comprising 370,000 hotel rooms in approximately <span> 100 countries</span>.</p>
+                   <p class="color-violet-0">see official website?</p>
+                   <div class="divider-2 div-transparent div-dot">
+                       <i class="icofont-web icofont-2x icon-divider"></i>
+                   </div>
+                   </div>
+
+                   <div class="mt-3">
+                   <svg class="bi bi-arrow-down" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                   <path fill-rule="evenodd" d="M4.646 9.646a.5.5 0 01.708 0L8 12.293l2.646-2.647a.5.5 0 01.708.708l-3 3a.5.5 0 01-.708 0l-3-3a.5.5 0 010-.708z" clip-rule="evenodd"/>
+                   <path fill-rule="evenodd" d="M8 2.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V3a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
+                   </svg>
+
+                   <a class="color-violet-2" href="https://www.marriott.com/default.mi">click here</a>
+                   </div>
+               </div>
+
+           </div>
+
+        </div>
+
+    </div>
+    <!-- end of sponsor part -->
+
+    <!-- booking part -->
+    <div class="container-fluid mt-5 bg-property bg-hotel">
+
+       <div class="col-sm-12 cont-temp">
+
+          <div class="row">
+          <!-- header part -->
+           <div class="col-lg-6 col-sm-8 offset-lg-3 offset-sm-2 mt-lg-3 mt-5">
+           <h1 id="head-book" class="color-white mx-1">see you in our hotel</h1>
+           <p id="matn-book" class="color-white mx-lg-5 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, nam. Quisquam a incidunt adipisci corporis facere dignissimos explicabo ad facilis, recusandae animi nulla fugiat, ipsa debitis soluta tenetur. Quaerat, esse.</p>
+           </div>
+
+           <!-- form part -->
+            <form novalidate action="blank.html" method="get" class="col-sm-12 mt-2" onsubmit="return submitVal()">
+
+            <div class="form-row d-flex justify-content-between align-items-center mb-2">
+            <!-- email input -->
+                <div class="col-sm-3 col-4 inputs">
+
+                <input type="email" class="invisible content-form form-control" id="inputEmail" aria-describedby="emailHelp" name="emailAdd" onblur="focusChange(this)">
+
+                <label class="invisible content-form color-0" for="inputEmail">Email address?</label>
+
+                </div>
+
+            <!-- submit button -->
+                <div class="col-sm-5 col-4">
+                <button type="submit" id="btn-booking" class="btn btn-secondary btn-lg color-high bg-grad2">Booking now!</button>
+                </div>
+            <!-- country input -->
+                <div class="col-sm-3 col-4 inputs">
+
+                <input type="text" class="invisible content-form form-control" name="contryName" id="country" onblur="focusChange(this)">
+
+                <label class="invisible content-form color-0" for="country">your country?</label>
+
+                </div>
+
+            </div>
+            </form>
+          </div>
+
+       </div>
+
+    </div>
+    <!-- end of booking part -->
+
+    <!-- footer part -->
+    <footer class="container-fluid mt-5 bg-footer">
+
+       <div class="col-sm-12">
+
+        <div class="row no-gutters pt-4 mx-2">
+
+        <div class="col-sm-4 footer-rows p-4 pt-5">
+           <h1>Internatinal Hotel</h1>
+           <p class="color-white maxP">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore beatae, suscipit repudiandae ullam, ab veritatis culpa eos, vitae iure amet quasi facere sint voluptatibus nam fuga minima esse molestiae unde.</p>
+
+           <div class="social-icons">
+            <i class="icofont-facebook mx-xl-2 mx-lg-1 mt-2"></i>
+            <i class="icofont-reddit mx-xl-2 mx-lg-1 mt-2"></i>
+            <i class="icofont-instagram mx-xl-2 mx-lg-1 mt-2"></i>
+            <i class="icofont-twitter mx-xl-2 mx-lg-1 mt-2"></i>
+           </div>
+        </div>
+
+        <section class="col-sm-8 footer-rows">
+
+        <div class="row no-gutters">
+        <div class="col-sm-6 services p-4 pt-5">
+            <h1>services</h1>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item color-white">room service</li>
+              <li class="list-group-item color-white">food service</li>
+              <li class="list-group-item color-white">security</li>
+              <li class="list-group-item color-white">CHECK-IN AND CHECK-OUT</li>
+            </ul>
+        </div>
+
+        <div class="col-sm-6 usfule footer-rows p-4 pt-5">
+            <h1>usfule links</h1>
+            <div class="list-group">
+                  <button type="button" class="list-group-item list-group-item-action color-white">
+                      contact us
+                  </button>
+
+                  <button type="button" class="list-group-item list-group-item-action color-white">
+                      about us
+                  </button>
+
+                  <button type="button" class="list-group-item list-group-item-action color-white">
+                      management
+                  </button>
+
+                  <button type="button" class="list-group-item list-group-item-action color-white">
+                      locations
+                  </button>
+
+            </div>
+        </div>
+        </div>
+
+        <div class="row no-gutters">
+        <div class="col-sm-12 copyRight">
+        <p class="pb-5 text-center">Copyright <i class="icofont-copyright"></i>2020 internatinal hotel, All rights reserved.</p>
+        </div>
+        </div>
+
+        </section>
+
+        </div>
+
+       </div>
+
+    </footer>
+    <!-- end of footer part -->
+
+</div>
+
+<!-- scripts for Bootstrap4 -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- ////////////// -->
+
+<!--&lt;!&ndash; scripts of bs &ndash;&gt;-->
+<!--<script src="js/jquery-3.4.1.min.js"></script>-->
+<!--<script src="js/bootstrap.min.js"></script>-->
+
+
+
+<!-- my script -->
+<script src="js/gozine.js"></script>
+<script src="js/myjava.js"></script>
+<script src="js/script.js"></script>
+
+<!-- wow.js script -->
+<script src="js/WOW/dist/wow.js"></script>
+<!-- because we used page loader you must activate "wow" after loading page, in "script.js" file -->
+
+
+</body>
+</html>

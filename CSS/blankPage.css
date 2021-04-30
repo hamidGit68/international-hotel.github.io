@@ -1,0 +1,15 @@
+.parMessage {
+	background-color: rgba( 69,222, 61,.8);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.parMessage p {
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: "Arbutus";
+	color: #7F0083;
+}

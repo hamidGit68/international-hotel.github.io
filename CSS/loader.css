@@ -1,0 +1,225 @@
+*, *::after, *::before {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.contain {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100vh;
+/*	background-color: #57faf6;*/
+}
+
+.loader {
+  	position: relative;
+  	width: 516px;
+  	height: 328px;
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(6,128,0,.5)), color-stop(rgba(255,255,255,.8)), to(rgba(6,128,0,.5)));
+	background-image: linear-gradient(90deg, rgba(6,128,0,.5), rgba(255,255,255,.8), rgba(6,128,0,.5));
+}
+
+
+.axe-kol {
+	max-width: 100%;
+	background-size: 100%; 
+	background-image: url(../image/kol.png);
+	position: absolute;
+  	display: inline-block;
+	opacity: 0;
+	-webkit-animation: show 1.4s step-end infinite alternate;
+  	animation: show 1.4s step-end infinite alternate;
+}
+
+.farsh-asli { 
+	width: 100%;
+	height: 88px;
+	bottom: 0;
+	left: 0;
+	background-position: 0 0%;
+	background-size: 100%; 
+	-webkit-animation-delay: .1s; 
+	animation-delay: .1s;
+}
+
+.ple-1 { 
+	width: 74.3%;
+	height: 224px;
+	bottom: 104px;
+	left: 12.7%;
+	background-position: 0 100%; 
+	background-size: 134.895833%; 
+	-webkit-animation-delay: .15s; 
+	animation-delay: .15s;
+}
+
+.l1 { 
+	width: 75.2%;
+	height: 24px;
+	bottom: 86px;
+	left: 12.4%;
+	background-position: 0 16.512059%;
+	background-size: 132.820513%;
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
+}
+
+.l2 { 
+	width: 75.2%;
+	height: 24px;
+	bottom: 110px;
+	left: 12.4%;
+	background-position: 0 25.788497%; 
+	background-size: 132.820513%;
+	-webkit-animation-delay: .25s;
+	animation-delay: .25s;
+}
+.l3 { 
+	width: 75.2%;
+	height: 24px;
+	bottom: 133px;
+	left: 12.4%;
+	background-position: 0 30.426716%;
+	background-size: 132.820513%; 
+	-webkit-animation-delay: .3s; 
+	animation-delay: .3s;
+}
+
+.l4 { 
+	width: 75.2%;
+	height: 24px;
+	bottom: 155px;
+	left: 12.4%;
+	background-position: 0 35.064935%; 
+	background-size: 132.820513%; 
+	-webkit-animation-delay: .35s; 
+	animation-delay: .35s;
+}
+.l5 { 
+	width: 75.2%;
+	height: 24px;
+	bottom: 176px;
+	left: 12.4%;
+	background-position: 0 39.703154%; 
+	background-size: 132.820513%; 
+	-webkit-animation-delay: .4s; 
+	animation-delay: .4s;
+}
+
+.l6 { 
+	width: 75.2%;
+	height: 24px;
+	bottom: 196px;
+	left: 12.4%;
+	background-position: 0 44.341373%; 
+	background-size: 132.820513%; 
+	-webkit-animation-delay: .45s; 
+	animation-delay: .45s;
+}
+.l7 {
+	width: 75.2%;
+	height: 24px;
+	bottom: 216px;
+	left: 12.4%;
+	background-position: 0 48.979592%;
+	background-size: 132.820513%; 
+	-webkit-animation-delay: .5s; 
+	animation-delay: .5s;
+}
+
+.l8 {
+	width: 75.2%;
+	height: 24px;
+	bottom: 234px;
+	left: 12.4%;
+	background-position: 0 53.617811%;
+	background-size: 132.820513%;
+	-webkit-animation-delay: .55s;
+	animation-delay: .55s;
+}
+.l9 {
+	width: 75.2%;
+	height: 24px;
+	bottom: 252px;
+	left: 12.4%;
+	background-position: 0 58.25603%;
+	background-size: 132.820513%; 
+	-webkit-animation-delay: .6s; 
+	animation-delay: .6s;
+}
+
+.l10 { 
+	width: 75.2%;
+	height: 24px;
+	bottom: 269px;
+	left: 12.4%;
+	background-position: 0 21.150278%;
+	background-size: 132.820513%; 
+	-webkit-animation-delay: .65s; 
+	animation-delay: .65s;
+}
+
+
+
+
+@-webkit-keyframes show {
+  from, 40% {
+    opacity: 0;
+  }
+  41%, to {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  from, 40% {
+    opacity: 0;
+  }
+  41%, to {
+    opacity: 1;
+  }
+}
+
+.text-head {
+	text-align: center;
+	opacity: 0;
+	-webkit-animation: show 1.4s step-end infinite alternate;
+  	animation: show 1.4s step-end infinite alternate;
+	-webkit-animation-delay: .7s;
+	animation-delay: .7s;
+	font-size: 25px;
+	font-weight: 900;
+    font-family: "MADEGood";
+	color: #D299D4;
+	text-shadow: 2px 2px #AB24AF;
+}
+
+/* page show */
+.animate-bottom {
+  	position: relative;
+  	-webkit-animation-name: animatebottom;
+  	-webkit-animation-duration: 1s;
+  	animation-name: animatebottom;
+  	animation-duration: 1s;
+	text-align: center;
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+

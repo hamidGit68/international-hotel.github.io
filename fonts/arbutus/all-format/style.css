@@ -1,0 +1,13 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Arbutus";
+  src: url("./fonts/Arbutus.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Arbutus.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Arbutus.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/Arbutus.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Arbutus.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Arbutus.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Arbutus.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
